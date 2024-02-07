@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/dashboard', [ProfileController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/dashboardadm', [DashboardController::class, 'dashboardadm'])->middleware(['auth', 'verified'])->name('dashboardadm');
+// Route::get('/dashboardadm', 'DashboardController@dashboardadm')->name('dashboardadm'); //не верный синтаксисю. Видимо не верный вызов метода
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
