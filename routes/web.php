@@ -20,7 +20,13 @@ Route::get('/', function () {
 });
 Route::get('/dashboard', [ProfileController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
 
+/* Старая рабочая команда без группового машрута, ниже групповой маршрут
 Route::get('/dashboardadm', [DashboardController::class, 'dashboardadm'])->middleware(['auth', 'verified'])->name('dashboardadm');
+ */
+
+Route::group(['prefix'=>'dashboardadm', 'namespase'=>'Admin', 'middleware'=>['auth', 'verified']], function() {
+    Route::get('/', [DashboardController::class, 'dashboardadm'])->name('dashboardadm');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
