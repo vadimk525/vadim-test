@@ -17,6 +17,12 @@
                     </x-nav-link>
                 </div>
             </div>
+            <!-- Left Side Of Navbar Сам добавил нижележащий блок создав родилельское меню Блог-->
+            <ul class="nav navbar-nav">
+                <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"  role="button" aria-expanded="false">Блог</a>
+                </li>
+            </ul>
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
