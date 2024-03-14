@@ -18,15 +18,26 @@
                 </div>
             </div>
             <!-- Left Side Of Navbar Сам добавил нижележащий блок создав родилельское меню Блог, но Арсэн сказал что образец кода нужно
-            взять ниже в разделе  Settings Dropdown-->
-            <ul class="nav navbar-nav">
+            взять ниже в разделе, поэтому закомментировал этот код  Settings Dropdown-->
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"  role="button" aria-expanded="false">Блог</a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="#">Категории</a></li>
                     <li><a href="#">Материалы</a></li>
                 </li>
-            </ul>
+            </ul> --}}
+             <!-- Код для раздела меню Блог-Категории-Материалы -->
+
+            {{-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex"> пока закомментировал классы--}}
+            <div>
+                <ul>
+                    <li><a href="#">Блог</a></li>
+                    <ul>
+                        <li><a href="#">Категории</a></li>
+                        <li><a href="#">Материалы</a></li>
+                    </ul>
+                </ul>
+            </div>
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
