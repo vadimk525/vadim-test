@@ -19,6 +19,7 @@
             </div>
             <!-- Left Side Of Navbar Сам добавил нижележащий блок создав родилельское меню Блог, но Арсэн сказал что образец кода нужно
             взять ниже в разделе, поэтому закомментировал этот код  Settings Dropdown-->
+{{--             <ul class="nav navbar-nav">
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"  role="button" aria-expanded="false">Блог</a>
                   <ul class="dropdown-menu" role="menu">
