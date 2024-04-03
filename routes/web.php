@@ -26,7 +26,7 @@ Route::get('/dashboardadm', [DashboardController::class, 'dashboardadm'])->middl
  */
 
 Route::group(['prefix'=>'dashboardadm', 'namespase'=>'Admin', 'middleware'=>['auth', 'verified']], function() {
-    Route::get('/', [DashboardController::class, 'dashboardadm'])->name('dashboardadm');
+    Route::get('/', [DashboardController::class, 'dashboardadm'])->name('admin.index');
     Route::resource('category', CategoryController::class, ['as'=>'admin']);
 });
 
