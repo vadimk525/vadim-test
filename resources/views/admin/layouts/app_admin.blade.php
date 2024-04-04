@@ -16,7 +16,7 @@
           href="https://cdnjs.cloudflare.com/ajax/font-awesome/4.7.0/css/font-awesome.min.css">
 
               <!-- Styles стили из проекта DKA-BLOG -->
-    <link href="{{ asset('css/app1.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/app1.css') }}" rel="stylesheet">
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}"></script>
