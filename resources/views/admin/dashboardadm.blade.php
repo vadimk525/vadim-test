@@ -1,11 +1,10 @@
 @extends('admin.layouts.app_admin')
 
 @section('content')
-{{--     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <div class="py-12">
+       {{-- <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100"> --}}
-                    {{-- {{ 'Admin Test!' }}//закоментировал строчку, ниже вместо этой строки новые html_элементы//--}}
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-3">
@@ -50,8 +49,8 @@
                         </div>
 
                     </div>
-                {{-- </div>
+     {{--       </div>
             </div>
-        </div>
-    </div> --}}
+        </div> --}}
+    </div>
 @endsection
