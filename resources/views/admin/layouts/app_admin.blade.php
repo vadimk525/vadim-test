@@ -25,8 +25,8 @@
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-        {{--     @include('admin.layouts.navigation_admin') --}}
-        @include('layouts.navigation')
+            @include('admin.layouts.navigation_admin')
+       {{--  @include('layouts.navigation') --}}
 
             <!-- Page Heading -->
             @if (isset($header))
