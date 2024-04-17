@@ -69,7 +69,7 @@
                 </div>
             </div>
 
-            <!-- Settings Dropdown hidden -->
+            <!-- Settings Dropdown из первой строки убрал hidden -->
             <div class="sm:flex sm:items-center sm:ml-6">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
