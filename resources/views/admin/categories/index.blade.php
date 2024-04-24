@@ -41,7 +41,6 @@
                     <ul class="pagination pull-right">
                         {{$categories->links()}}
                     </ul>
-
                 </td>
             </tr>
         </tfoot>
