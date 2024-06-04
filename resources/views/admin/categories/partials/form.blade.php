@@ -8,3 +8,10 @@
         <option value="1">Опубликовано</option>
     @endif
 </select>
+
+<label for="">Наименование</label>
+<input type="text" class="form-control" name="title" placeholder="Заголовок категории" value="{{-- {{$category->title or ""}} пока закомментировал, иначе ошибка--}}" required>
+
+<label for="">Slug</label>
+<input class="form-control" type="text" name="slug" placeholder="Автоматическая генерация" value="{{-- {{$category->slug or ""}} то же что и выше--}}" readonly="">
+
