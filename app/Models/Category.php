@@ -12,9 +12,9 @@ class Category extends Model
     protected $fillable = ['title', 'slug', 'parent_id', 'published', 'created_by', 'modified_by'];
 
     //Mutators
-/*     public function setSlugAttribute($value) {
-        $this->attributes['slug'] = Str::slug( mb_substr($this->Str::title, 0, 40) . "-" . \Carbon\Carbon::now()->format('dmyHi'), '-');
-    } */
+    public function setSlugAttribute($value) {
+        $this->attributes['slug'] = Str::slug( mb_substr($this->title, 0, 40) . "-" . \Carbon\Carbon::now()->format('dmyHi'), '-');
+    }
 
     //строка ниже добавлена автоматически, я ее не добавлял
     use HasFactory;
