@@ -27,7 +27,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view('admin.categories.greate', [
+        return view('admin.categories.сreate', [
             'category'   => [],
             'categories' => Category::with('children') ->where('parent_id', '0') -> get(),
             'delimiter'  => ''
