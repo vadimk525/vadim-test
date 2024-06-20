@@ -49,6 +49,21 @@
                                 </a>
                             </div>
                         </div>
+                        {{-- Код ниже добавлен для тестирования--}}
+                        <hr />
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a class="list-group-item" href="#">
+                                    <h4 class="list-group-item-heading">Тест</h4>
+                                   {{--  @component('admin.components.breadcrumb') --}}
+                                    {{--    @slot('title') Список категорий @endslot --}}
+                                    {{--   @slot('parent') Главная @endslot --}}
+                                    {{--     @slot('active') Категории @endslot --}}
+                                   {{--  @endcomponent --}}
+                                </a>
+                            </div>
+                        </div>
 
                     </div>
      {{--       </div>
