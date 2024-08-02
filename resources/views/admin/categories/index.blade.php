@@ -25,7 +25,8 @@
                     <td>{{$category->title}}</td>
                     <td>{{$category->published}}</td>
                     <td>
-                        <a href="{{ route('admin.category.edit', ['category' => $category->id]) }}">
+                        {{-- <a href="{{ route('admin.category.edit', ['category' => $category->id]) }}">Было до 9 урока --}}
+                        <a href="{{ route('admin.category.edit', $category) }}">
                             <i class="fafa-edit"></i>
                             link
                         </a>
